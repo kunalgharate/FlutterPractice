@@ -67,9 +67,13 @@ import 'package:http/http.dart' as http;
                   String key = countries.keys.elementAt(index);
                   return Row(
                     children: [
-                      Text('$key :',style: TextStyle(fontSize: 11.0)),
-                      Padding(padding: EdgeInsets.all(5),child:Text(countries[key],style: TextStyle(fontSize: 10.0),))
-                    ],
+                      Card(child:Row(children: [
+                        Text('$key :',style: TextStyle(fontSize: 14.0)),
+                        Padding(padding: EdgeInsets.all(5),child:Text(countries[key],style: TextStyle(fontSize: 15.0),))
+                      ],),),
+
+
+                  ],
                   );
 
                 },
